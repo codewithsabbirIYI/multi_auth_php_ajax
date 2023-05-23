@@ -28,52 +28,76 @@
                               <label for="name" class="form-label ">Name: </label>
                               <input type="text" name="name" id="name" class="form-control name" placeholder="Enter Full Name " aria-describedby="helpId">
                               <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                              <div class="invalid-feedback NameErrorBox">
+                               
+                              </div>
                             </div>
                             <div class="mb-3">
                               <label for="username" class="form-label">Username: </label>
                               <input type="text" name="username" id="username" class="form-control username" placeholder="Enter Username" aria-describedby="helpId">
                               <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                              <div class="invalid-feedback usernameErrorBox">
+                                Username Field Is Required
+                              </div>
                             </div>
                             <div class="mb-3">
                               <label for="phone" class="form-label">Phone Number: </label>
                               <input type="text" name="phone" id="phone" class="form-control phone" placeholder="Enter Active Phone Number" aria-describedby="helpId">
                               <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                              <div class="invalid-feedback phoneErrorBox">
+                                Phone Field Is Required
+                              </div>
                             </div>
                             <div class="mb-3">
                               <label for="email" class="form-label">Email: </label>
                               <input type="text" name="email" id="email" class="form-control email" placeholder="Enter Active Email Address" aria-describedby="helpId">
                               <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                              <div class="invalid-feedback emailErrorBox">
+                                Email Field Is Required
+                              </div>
                             </div>
                             <div class="mb-3">
                               <label for="password" class="form-label">Password: </label>
                               <input type="password" name="password" id="password" class="form-control password" placeholder="Enter Password" aria-describedby="helpId">
                               <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                              <div class="invalid-feedback passwordErrorBox">
+                                Password Field Is Required
+                              </div>
                             </div>
                             <div class="mb-3">
                               <label for="confirmPassword" class="form-label ">Confirm Password: </label>
                               <input type="password" name="confirmPassword" id="confirmPassword" class="form-control confirmPassword" placeholder="Confirm Password" aria-describedby="helpId">
                               <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                              <div class="invalid-feedback confirmPasswordErrorBox">
+                                Confirm Password Field Is Required
+                              </div>
                             </div>
                             <div class="mb-3">
                               <label for="role" class="form-label">Role</label>
                               <select class="form-select form-select-md role" name="role" id="role">
-                                  <option selected>---Select Role---</option>
+                                  <option selected value="0">---Select Role---</option>
                                   <option value="admin">Admin</option>
                                   <option value="user">User</option>
                               </select>
+                              <div class="invalid-feedback roleErrorBox">
+                                Role Field Is Required
+                              </div>
                             </div>
 
                             <div class="mb-3">
                               <label for="status" class="form-label">Status</label>
                               <select class="form-select form-select-md status" name="status" id="status">
-                                  <option selected>---Select Status---</option>
+                                  <option value="">---Select Status---</option>
                                   <option value="1">Active</option>
                                   <option value="2">Inactive</option>
                               </select>
+                              <div class="invalid-feedback statusErrorBox">
+                                Status Field Is Required
+                              </div>
                             </div>
                         
                             <div class="mb-3 text-center">
-                              <input type="submit" class="btn btn-info btn-md my-3 registration" name= "registration" id= "registration" value="Submit">
+                              <input type="submit" class="btn btn-info btn-md my-3 registration " name= "registration" id= "registration" value="Submit">
 
                             </div>
                             <badge class="text-center m-auto ">Already Have An Account ? <a href= "login.php" class= "text-lg">Log In</a> </badge>
